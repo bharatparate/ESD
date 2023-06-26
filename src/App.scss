@@ -1,0 +1,44 @@
+@import url(../src/css/fonts.css);
+
+html, body,*{
+  box-sizing: border-box;
+}
+body{
+  font-family: 'bebas_kairegular';
+}
+h1, h2, h3, h4, h5{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* Detail Page css*/
+.detailPage{
+  display: flex;
+  &__left{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 40%;
+    background-color:#e5e5e5;
+    padding: 20px;
+  }
+  &__right{
+    margin-left: 40%;
+    width: 60%;
+    .blackBanner{
+      margin-left: -20%;
+      margin-top: 30px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  &__right-content{
+    padding: 50px;
+  }
+}
+
+/* Detail Page css ends */
