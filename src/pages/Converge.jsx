@@ -1,11 +1,14 @@
-import React from "react";
+import React, {useEffect, useState} from 'react';
 import Navigation from "../components/Navigation/Navigation";
 import BlackBanner from "../components/BlackBanner/BlackBanner";
 import { Link } from "react-router-dom";
 import TextComponent from "../components/Text/TextComponent";
 import convergeData from "../data/converge.json";
+import axios from "axios";
+
 
 const Converge = () => {
+
   return (
     <>
    
