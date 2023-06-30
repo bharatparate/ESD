@@ -20,7 +20,7 @@ const Collaborate = () => {
 
   return (
     <>
-      {JSON.stringify(collabrateData)}
+      
       {
         <div className="detailPage">
           <div className="detailPage__left">
