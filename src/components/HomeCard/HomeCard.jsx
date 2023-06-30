@@ -4,12 +4,10 @@ import './HomeCard.scss'
 
 
 const HomeCard = (props) => {
- 
-const id= 2;
 
   return (
     <>
-        <div className="homepageTile"><Link to={`/detail/${id}`}><span>{props.title}</span></Link> </div>
+        <div className="homepageTile"><Link to={`${props.url}`}><span>{props.title}</span></Link> </div>
     </>
   );
 }

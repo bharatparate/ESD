@@ -19,7 +19,8 @@ $black:#212121;
                 display: inline-block;
                 text-align: center;
                 transition: 0.3s ease all;
-                &:hover{
+                font-family: 'bebas_kairegular';
+                &:hover, &.active{
                     background-color: $black;
                     color: #fff;
                     transition: 0.3s ease all;

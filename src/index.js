@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Scrollbars } from 'react-custom-scrollbars';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+ <Scrollbars className="customScroll" style={{ width: "100%", height: "100vh" }}>
+  <App />
+ </Scrollbars>
+   
   </React.StrictMode>
 );
 

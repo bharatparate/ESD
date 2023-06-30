@@ -1,20 +1,29 @@
 @import url(../src/css/fonts.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import '~bootstrap/scss/bootstrap';
+@import url('./css/global.scss');
+@import url('./css/accordian.scss');
+
 
 html, body,*{
   box-sizing: border-box;
 }
 body{
-  font-family: 'bebas_kairegular';
+
+  font-family: 'Inter', sans-serif;
 }
 h1, h2, h3, h4, h5{
   margin: 0;
   padding: 0;
+  font-family: 'bebas_kairegular';
 }
 a{
   text-decoration: none;
-  color: #000;
+  color: #212121;
 }
-
+.customScroll > div:last-child div {
+  background-color: #000 !important;
+}
 /* Detail Page css*/
 .detailPage{
   display: flex;
@@ -29,6 +38,7 @@ a{
   &__right{
     margin-left: 40%;
     width: 60%;
+    border-left: 1px solid #212121;
     .blackBanner{
       margin-left: -20%;
       margin-top: 30px;
@@ -41,4 +51,73 @@ a{
   }
 }
 
+.links{
+  margin-top: 50px;
+  ul{
+      margin: 0;
+      padding: 0;
+      list-style:none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      li{
+          flex:  0 0 50%;
+          margin-bottom: 35px;
+          a{
+              color: #212121;
+              font-size: 24px;
+              font-weight: 300;
+              line-height: 32px;
+              letter-spacing: 1.2px;
+              text-transform: uppercase;
+              transition: 0.2s ease all;
+              &:hover{
+                  text-decoration: underline;
+                  font-weight:bold;
+                  transition: 0.2s ease all;
+              }
+          }
+      }
+  }
+  &--styled{
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    ul{
+      padding-bottom: 20px;
+      position:relative;
+      &:before{
+        content: "";
+        height: 5px;
+        width: 50px;
+        position: absolute;
+        left: 50%;
+        background-color: #fff;
+        bottom: -2px;
+        margin-left: -50px;
+      }
+      li{
+        margin-bottom: 0;
+        a{
+          color: #212121;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: 2px;
+          position: relative;
+          padding-left: 30px;
+          &:before{
+            content: "—";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            line-height: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Detail Page css ends */
+

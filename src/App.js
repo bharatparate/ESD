@@ -1,7 +1,9 @@
 import './App.scss';
+
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Homepage from './pages/Homepage';
-import DetailPage from './pages/DetailPage';
+import Converge from './pages/Converge';
+import Collaborate from './pages/Collaborate';
 
 
 const App = () => {
@@ -10,7 +12,8 @@ const App = () => {
      <BrowserRouter> 
       <Routes>
         <Route path='/' element={<Homepage/>}></Route>
-        <Route path='/detail/:id' element={<DetailPage/>}></Route>
+        <Route path='/converge' element={<Converge/>}></Route>
+        <Route path='/collaborate' element={<Collaborate/>}></Route>
       </Routes>
     </BrowserRouter>
     </>

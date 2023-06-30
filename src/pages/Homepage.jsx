@@ -18,11 +18,11 @@ const Homepage = () => {
   return (
     <>
       <div className={`randomNum randomNum${num}`}>
-        <HomeCard title={"COLLAB\nO\nRATE"} />
-        <HomeCard title={"con\nverge"} />
-        <HomeCard title={"ERGOSUMDEUS"} />
-        <HomeCard title={"COMM\nUNI\nCATE"} />
-        <HomeCard title={"COG\nI\nTATE"} />
+        <HomeCard url={'/collaborate'} title={"COLLAB\nO\nRATE"} />
+        <HomeCard url={'converge'} title={"con\nverge"} />
+        <HomeCard url={'/'} title={"ERGOSUMDEUS"} />
+        <HomeCard url={'/'} title={"COMM\nUNI\nCATE"} />
+        <HomeCard url={'/'} title={"COG\nI\nTATE"} />
 
       </div>
     </>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './Navigation.scss'
 
 
@@ -8,14 +8,14 @@ const Navigation = () => {
  const id = "01"
   return (
     <>
-        <nav className='mainNav'>
+        <nav className='mainNav'> 
             <ul>
-                <li> <Link className="nav-link" to={`/detail/${id}`}>ERGOSUMDEUS</Link></li>
-                <li> <Link className="nav-link" to={`/detail/${id}`}>CONVERGE</Link></li>
-                <li> <Link className="nav-link" to={`/detail/${id}`}>COLLABORATE</Link></li>
-                <li> <Link className="nav-link" to={`/detail/${id}`}>COGITATE</Link></li>
-                <li> <Link className="nav-link" to={`/detail/${id}`}>COMMUNICATE</Link></li>
-                <li> <Link className="nav-link" to="/">EXIT</Link></li>
+                <li> <NavLink className="nav-link" to={`/`}>ERGOSUMDEUS</NavLink></li>
+                <li> <NavLink className="nav-link" to={`/converge`}>CONVERGE</NavLink></li>
+                <li> <NavLink className="nav-link" to={`/collaborate`}>COLLABORATE</NavLink></li>
+                <li> <NavLink className="nav-link" to={`/`}>COGITATE</NavLink></li>
+                <li> <NavLink className="nav-link" to={`/`}>COMMUNICATE</NavLink></li>
+                <li> <NavLink className="nav-link" to="/">EXIT</NavLink></li>
             </ul>
         </nav>
     </>
